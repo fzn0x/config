@@ -15,3 +15,5 @@ brew install exa
 brew install glances
 # A cat(1) clone with wings.
 brew install bat
+# Show system information
+brew install neofetch
