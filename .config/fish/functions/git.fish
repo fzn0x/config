@@ -9,6 +9,17 @@ alias glog="git log --pretty=oneline"
 alias glogp="git log -p"
 # Checkout a branch
 alias gcout="git checkout"
+
+# Show current branch
+alias gb="git branch"
+# Changing branch name
+alias gbmv="git branch --move" # Then, push changed branch name / push with --set-upstream option
+alias gpushsu="git push --set-upstream" # Finally, do not forget to remove the old branch before changed with `gpushd`.
+# Deleting branches on local repositories
+alias gbd="git branch -d" # fully merged branches only
+# Deleting branches on local repositories
+alias gbD="git branch -D" # both fully merged or not branches
+
 # Rebase
 alias grb="git rebase"
 
