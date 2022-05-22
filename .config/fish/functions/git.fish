@@ -1,6 +1,6 @@
 # Written on fish v3.4.1
 # Create a commit message on git
-alias gcommit="git commit -m"
+alias gcm="git commit -m"
 # Show commit history
 alias glog="git log"
 # Show commit history (pretty output)
@@ -9,6 +9,8 @@ alias glog="git log --pretty=oneline"
 alias glogp="git log -p"
 # Checkout a branch
 alias gcout="git checkout"
+# Show all files which have changes to commit
+alias gs="git status"
 
 # Show current branch
 alias gb="git branch"
@@ -32,6 +34,11 @@ alias gpushtags="git push --tags"
 alias gpusht="git push --follow-tags"
 # Deleting tags or branches from remote servers
 alias gpushd="git push origin --delete"
+# Force push
+alias gpushf="git push --force" # warning: Don't ever force push on a public repository (reason: can break someone's pull). @linquize: Useful to remove **sensitive data**.
+# do a revert instead
+alias grevert="git revert -n" # example: grevert HEAD~3..HEAD, prepare a new commit reverting last 3 commits
+# then, execute `gcm` and `gpush`.
 
 # Tag list
 alias gtagl="git tag -l"
