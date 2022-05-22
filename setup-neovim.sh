@@ -1,3 +1,8 @@
 #!/usr/bin/env/fish
-fish_add_path "/opt/homebrew/bin"
+if command -v brew > /dev/null 2>&1; then
+  brew -v
+else
+  fish_add_path "/opt/homebrew/bin"
+fi
+
 brew install neovim
