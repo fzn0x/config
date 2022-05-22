@@ -11,3 +11,7 @@ brew install neovim
 brew install fx
 # The ultimate `ls`
 brew install exa
+# An eye for your system
+brew install glances
+# A cat(1) clone with wings.
+brew install bat
